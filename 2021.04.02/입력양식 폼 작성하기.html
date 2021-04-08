@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>선호하는 운동</title>
+</head>
+<body>
+    <h1>가장 선호하는 운동</h1>
+    <hr>
+
+    <!-- 회원 인증 -->
+    <form>
+        <fieldset>
+            <legend><span style="background-color: cornsilk;">회원 인증</span></legend>
+        <p> Email : <input type="email" name="myemail" size="20" required ></p>
+        <p>PASSWORD : <input type="text" name="PASSWORD" size="20" required></p> </p>
+        <p> PASSWORD 확인 : <input type="text" name="PASSWORD" size="20" required></p>
+        <p></p>
+        <input type="submit" value="로그인">
+    </fieldset> 
+    </form>
+    <p></p>
+
+    <!-- 성별,나이 -->
+    <form>
+        <fieldset>
+            <legend><span style="background-color: rgb(240, 63, 9);">나이와 성별을 작성 해주세요</span></legend>
+            <h3>당신의 성별은 무엇입니까?</h3>
+            <input type="radio" name="sex" value="male" required>남자
+            <input type="radio" name="sex" value="female" required>여자
+            <p></p>
+            <h3>나이를 입력하세요</h3>
+            <input type="number" name="count" min="1" max="130" required>
+            <p></p>
+            <input type="submit" value="완료">
+        </fieldset>
+    </form>
+    <p></p>
+
+    <!-- 원하는 운동 날짜,시간 -->
+    <form>
+        <fieldset>
+            <legend><span style="background-color: cornflowerblue;">선호하는 날짜, 시간</span></legend>
+            <h3>원하는 날짜</h3>
+            날짜 : <input type="date" name="bdaytime" required>
+            <h3>원하는 시간</h3>
+            시간 : <input type="time" name="now" required>
+            <p></p>
+            <input type="submit" value="완료">
+            
+        </fieldset>
+    </form>
+
+    <!-- 주로 하는 운동 -->
+    <form>
+        <fieldset>
+            <legend><span style="background-color: forestgreen;">선호하는 운동</span></legend>
+            <h3>당신이 선호하는 운동은 무슨 운동 입니까</h3>
+            <input type="radio" name="exercise" value="Aerobic Exercise">유산소 운동
+            <input type="radio" name="exercise" value="Anaerobic Exercise">무산소 운동
+            <p></p>
+            <input type="submit" value="완료">
+        </fieldset>
+    </form>
+
+    <!-- 주로 사용하는 기구 -->
+    <form>
+        <fieldset>
+            <legend><span style="background-color: cyan;">주로 사용하는 기구</span></legend>
+            <h3>유산소</h3>
+            <select name="Aerobic Exercise" size="2" multiple required>
+                <option value="1">싸이클</option>
+                <option value="2">런닝머신</option>
+                <p></p>
+            </select>
+            <p></p>
+            <h3>무산소</h3>
+            <p></p>
+            <select name="Anaerobic Exercise" size="3" multiple required>
+                <option value="1">덤벨</option>
+                <option value="1">바벨</option>
+                <option value="1">머신</option>
+            </select>
+            <p></p>
+            <input type="submit" value="완료">
+        </fieldset>
+    </form>
+    <p></p>
+
+    <!-- 기타 문의 사항 -->
+    <form>
+        <fieldset>
+            <legend><span style="background-color: chartreuse;">기타 문의 사항</span> </legend>
+            <textarea rows="10" cols="80" placeholder="기타 문의 사항이 있으시면 작성해주세요." ></textarea>
+        </fieldset>
+        <p></p>
+    </form>
+</body>
+</html>
