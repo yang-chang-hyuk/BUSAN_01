@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>title name</title>
+    <script>
+        // for : 가장 많이 사용하는 반복문
+        for (var i = 0; i < 10; i++) {
+            console.log(i);
+        }
+
+        // 문제1) for문을 사용하여 1~10까지의 값을 모두 합하여 화면에 출력하세요
+        // var result 
+        //변수 result는 메모리 상에 선언만 되고 초기화 되지 않았기 때문에
+        //기본값이 undefined 로 설정됨
+        //undefined는 정수 타입의 데이터 타입이 아니기 때문에 숫자와 연산이
+        //불가능하여 undefined와 숫자 타입과 연산 후 결과가 NaN(Not a Number)이 출력됨
+
+        //자바스크립트에서 연산용으로 사용할 변수에 초기화가 중요함
+        var result = 0; //1~10까지의 합을 저장할 변수
+        
+        for (var i = 1; i < 11; i++) {
+            result = result + i;
+        }
+        console.log("1~10까지의 합은" + result + "입니다.");
+    </script>
+</head>
+
+<body>
+
+</body>

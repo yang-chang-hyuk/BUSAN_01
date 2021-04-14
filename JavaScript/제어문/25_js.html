@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>title name</title>
+    <script>
+        // while문 : 가장 기본적인 반복문
+        // 초기식이 while문 밖에 존재함
+        // 증감식이 실행코드 영역(코드블럭)에 같이 존재함
+        //조건식만 while 문 키워드와 함께 사용
+        //whule 문은 초기식과 증감식이 while 문 선언가 동시에 존재하는 것이 아니기
+        //때문에 초기식은 while 문이 종료된 후에도 계속 메모리에 남아있으며, 증강식은
+        //사용하는 위치에 따라 결과가 다르게 출력될 수 있음
+
+        var count = 0;
+        while (count <10){
+            console.log(count);
+            count++;
+        }
+
+        console.log ("\n---------주의점1, 증감식위치---------\n");
+        console.log ("\n---------증감식을 마지막에 사용---------\n");
+        var count = 0;
+        while (count <10){
+            console.log(count);
+            count++;
+        }
+        console.log ("\n---------증감식을 처음에 사용---------\n");
+        var count = 0;
+        while (count <10){
+            count++;
+            console.log(count);
+        }
+
+        console.log ("\n---------주의점2, 초기식의 값이 남아있음---------\n");
+        console.log ("\n---------초기식 처음 사용---------\n");
+        //초기식에 사용된 변수를 계속 활용할 경우 기존의 while문에서 증감된 데이터가
+        //그대로 메모리에 남아있기 때문에 오류가 발생할 가능성이 높음
+        //for문의 경우는 초기식,조건식,증감식을 한번에 입력하도록 형태를 고정하고
+        //있어서 이러한 재활용 오류가 발생할 가능성이 낮음
+        var count2 = 0;
+        while (count2 < 5){
+            console.log(count2);
+            count2++;
+        }
+        console.log ("\n---------초기식 재활용 사용---------\n");
+        while (count2 < 5){
+            console.log(count2);
+            count2++;
+        }
+
+        console.log ("\n---------주의점3, 증감식 미 입력---------\n");
+        //증감식 부분을 미입력하게 되면 무한루프에 빠짐
+        var count3 = 0;
+        while(count3 < 5) {
+            console.log(count3);
+            count3++;
+        }
+        
+        //문제 2) while문을 사용하여 숫자1~10까지의 합을 구하는 프로그램을 작성하세요
+        var i=1;
+        var sum=0;
+        while(i < 11){
+            sum+=i;
+            i++
+        }
+        console.log("1~10까지의 합은"+ sum +"입니다.");
+    </script>
+
+</head>
+
+<body>
+
+</body>
