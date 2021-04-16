@@ -24,7 +24,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">쇼핑몰</a>
+            <a class="navbar-brand" href="메인 페이지.html">쇼핑몰</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
                             상품목록
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">상의</a></li>
+                            <li><a class="dropdown-item" href="상의.html">상의</a></li>
                             <li><a class="dropdown-item" href="#">하의</a></li>
                             <li><a class="dropdown-item" href="#">악세사리</a></li>
                             <li>
@@ -95,7 +95,7 @@
                 <label for="validationDefault03" class="form-label">구</label>
                 <input type="text" class="form-control" id="validationDefault03" required>
             </div>
-            
+
             <div class="col-md-3">
                 <label for="validationDefault05" class="form-label">동</label>
                 <input type="text" class="form-control" id="validationDefault05" required>
@@ -115,30 +115,39 @@
 
         <p></p>
 
-        <div class="form-floating mb-3" required>
-            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control " id="floatingInput" placeholder="name@example.com" required>
             <label for="floatingInput">이메일을 입력하시오</label>
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
             <label for="floatingPassword">비밀번호를 입력하시오</label>
         </div>
     </div>
     <p></p>
     <div class="container">
         <h4>성별을 고르시오</h4>
-        <div class="form-check" required>
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
             <label class="form-check-label" for="flexCheckDefault">남성</label>
         </div>
         <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
             <label class="form-check-label" for="flexCheckChecked">여성</label>
         </div>
 
 
         <p></p>
-
+        <h4>나이대를 고르시오</h4>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>10대</option>
+            <option value="1">20대</option>
+            <option value="2">30대</option>
+            <option value="3">40대</option>
+            <option value="4">50대</option>
+            <option value="5">60대</option>
+        </select>
+        <p></p>
         <div class="container">
             <h4>관심있는 상품</h4>
             <div class="form-check">
