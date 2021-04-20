@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-3.6.0.js"></script>
+    <title>title name</title>
+    <script>
+      $(document).ready(function(){
+        $("button.move").click(function(){
+          $("img").animate({
+            left:'300px'
+          });
+        });
+        $("button.init").click(function(){
+          $("img").animate({
+            left:'0px'
+          });
+
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button class="move">확대</button>
+    <button class="init">축소</button>
+    <p></p>
+    <img name="pic1" 
+    src="../Myhome/이미지 폴더/free-icon-investigation-4474356.png"
+    width="130"
+    height="100"
+    style="position: relative;"/>
+  </body>
+</html>
