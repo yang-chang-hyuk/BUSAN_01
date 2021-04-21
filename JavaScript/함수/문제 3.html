@@ -2,6 +2,57 @@
 <html>
   <head>
     <title>title name</title>
+    <script>
+      // 문제3) 문제 2번의 함수 scoreTotalAvg를 수정하여 scoreTotal, scoreAvg 로 각각 나누고,
+      // scoreTotal에서는 국어, 영어, 수학 과목의 총점을 계산하여 반환하고.
+      // scoreAvg에서는 3과목의 평균값을 반환하는 함수를 작성하고, 평균 점수 및 학점을 출력하는
+      // 프로그램을 작성하세요
+
+      function scoreTotal(kor, eng, math){
+        var total = kor + eng + math;
+        return total;
+      }
+      function scoreAvg(total){
+        var avg = total / 3;
+        return avg;
+      }
+      function scoreLevel(avg){
+        var level;
+
+        if (avg > 90){
+          level = "A"
+        }
+        else if (avg > 80){
+          level = "B"
+        }
+        else if (avg > 70){
+          level = "C"
+        }
+        else if (avg > 60){
+          level = "D"
+        }
+        else {
+          level = "F"
+        }
+      }
+
+      console.log("당신의 점수는 " +avg + "점이며," + level + "등급입니다.");
+      var korScore = prompt("국어 점수를 입력해 주세요 : ");
+      var engScore = prompt("영어 점수를 입력해 주세요 : ");
+      var mathScore = prompt("수학 점수를 입력해 주세요 : ");
+
+      korScore = Number(korScore);
+      engScore = Number(engScore);
+      mathScore = Number(mathScore);
+      
+      var totalScore = scoreTotal(korScore, engScore, mathScore);
+      var avgScore = scoreAvg(totalScore);
+
+      console.log("국영수 총합은 " + totalScore + "점 입니다.");
+      console.log("국영수 평균은 " + AvgScore + "점 입니다.");
+
+      scoreLevel(avgScore);
+    </script>
   </head>
   <body></body>
 </html>

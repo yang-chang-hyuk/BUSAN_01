@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>title name</title>
+    <script>
+      // 문제 4) 사용자 입력을 받아서 지정한 구구단 단수를 출력하는 프로그램을 작성하세요
+      // 구구단을 출력하는 부분을 함수로 작성하세요
+      // 함수명 : gugudan
+      // 출력형태 : 2 * 1 = 2 ~ 2 * 9 = 18 
+      function gugudan(dan) {
+        for (var i=1; i<=9; i++ ){
+          var r = dan * i;
+          console.log(dan+"*"+i+"="+dan*i);
+        }
+      }
+
+      var dan = prompt("출력할 구구단 단수를 입력해주세요.",5);
+      dan = Number(dan);
+
+      gugudan(dan);
+
+
+
+    </script>
+
+  </head>
+  <body>
+    
+  </body>
+</html>
