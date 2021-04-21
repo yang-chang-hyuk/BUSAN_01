@@ -4,27 +4,26 @@
     <script src="jquery-3.6.0.js"></script>
     <title>title name</title>
     <script>
-      $(document).ready(function(){
-        $("button.add").click(function(){
+      $(document).ready(function () {
+        $("button.add").click(function () {
           $("h1,h2,p").addClass("blue");
           $("div").addClass("important");
         });
-        $("button.remove").click(function(){
+        $("button.remove").click(function () {
           $("h1,h2,p").removeClass("blue");
           $("div").removeClass("important");
         });
       });
     </script>
     <style>
-      .important{
+      .important {
         font-weight: bold;
         font-size: xx-large;
       }
-      .blue{
+      .blue {
         color: blue;
       }
     </style>
-
   </head>
   <body>
     <h1>HTML5</h1>
